@@ -1,0 +1,66 @@
+//winners never quit//
+//basic code of class and object//
+#include<iostream>
+using namespace std;
+class student
+{
+    public://if you have any confusion why we use public,replace public with private and then run your code and you will find your answer//
+	int id;
+	double gpa;
+};
+int main()
+{
+	student mehedi;
+	mehedi.id = 19087;//for access value in variable we use dot operator//
+	mehedi.gpa = 3.08;
+	cout << mehedi.id << " " << mehedi.gpa << " " << endl;
+}
+
+
+
+//make a function that print our object//
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+	int id;
+	double gpa;
+	void display()
+	{
+		cout << id << " " << gpa << endl;
+	}
+};
+int main()
+{
+	student mehedi;
+	mehedi.id = 19087;
+	mehedi.gpa = 3.08;
+	mehedi.display();/instead of using cout<<mehedi.id<<" "<<mehedi.gpa we make a function display() that print our object//
+}
+
+
+//make a function that access our object variable //
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+	int id;
+	double gpa;
+	void display()
+	{
+		cout << id << " " << gpa << endl;
+	}
+	void setvalue(int x, double y)
+	{
+		id = x;
+		gpa = y;
+	}
+};
+int main()
+{
+	student mehedi;
+	mehedi.setvalue(19087, 3.08);
+	mehedi.display(); //instead of using cout << mehedi.id << " " << mehedi.gpa we make a function display() that print our object //
+}
