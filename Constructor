@@ -1,0 +1,63 @@
+
+      //using   of constructor//
+constructor is a special type of function that is used to initialize the object
+//properties of a constructor:
+1.constructor is a special type of function
+2.constructor has the same name as that of the class it belongs
+3.it has no return type even void
+4.it is called automatically
+   //types of constructor
+1.parametrized constructor
+2.default constructor
+if we give input within the constructor then it is called
+parametrized constructor else default constructor
+
+parametrized constructor code
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+	int id;
+	double gpa;
+	void display()
+	{
+		cout << id << " " << gpa << endl;
+	}
+	student(int x, double y)
+	{
+		id = x;
+		gpa = y;
+	}
+};
+int main()
+{
+	student alim(103, 3.44);
+	alim.display();
+}
+
+
+2.default constructor code
+
+
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+	int id;
+	double gpa;
+	void display()
+	{
+		cout << "kicu e nai keno? karon eta default" << endl;
+	}
+	student()
+	{
+		cout << "kahini bujco" << endl;
+	}
+};
+int main()
+{
+	student alim;
+	alim.display();
+}
